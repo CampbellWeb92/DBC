@@ -146,6 +146,16 @@ a {
   background: linear-gradient(145deg, #5b2dd1, #de1b72, #f2a83a);
 }
 
+.facebook {
+  background: linear-gradient(145deg, #1877f2, #0b55b7);
+}
+
+.social-icon {
+  width: 29px;
+  height: 29px;
+  fill: currentColor;
+}
+
 .contact-text {
   min-width: 0;
   display: flex;
