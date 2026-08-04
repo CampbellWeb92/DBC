@@ -1037,7 +1037,15 @@ a {
 /* Desktop landscape card */
 @media (min-width: 960px) {
   .page-shell {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
     padding: 28px;
+  }
+
+  .business-card {
+    margin: auto;
   }
 
   .business-card {
