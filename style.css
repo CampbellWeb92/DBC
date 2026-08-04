@@ -1037,15 +1037,7 @@ a {
 /* Desktop landscape card */
 @media (min-width: 960px) {
   .page-shell {
-    min-height: 100vh;
-    min-height: 100dvh;
-    display: grid;
-    place-items: center;
     padding: 28px;
-  }
-
-  .business-card {
-    margin: auto;
   }
 
   .business-card {
@@ -1386,5 +1378,34 @@ a {
 
   .qr-frame {
     width: 64px;
+  }
+}
+
+/* Desktop: keep the complete landscape card centered in the viewport. */
+@media (min-width: 701px) {
+  html,
+  body {
+    width: 100%;
+    min-height: 100%;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page-shell {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .business-card {
+    flex: 0 1 920px;
+    margin: auto;
   }
 }
